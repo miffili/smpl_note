@@ -1,0 +1,70 @@
+:root {
+  --signiture-color: #1c7ebd;
+}
+
+.App h1 {
+  margin: 2rem 0;
+}
+
+.button-custom {
+  color: var(--signiture-color);
+  border-color: var(--signiture-color);
+  background: transparent;
+}
+
+li {
+  list-style-type: none;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar li span {
+  cursor: default;
+  width: 100%;
+}
+
+.curr {
+  padding-left: 0.5rem;
+  border-left: 0.2rem solid var(--signiture-color);
+}
+
+.inactive {
+  border-left: none;
+}
+
+button.del-button {
+  display: none;
+  color: var(--signiture-color);
+  line-height: normal;
+  height: inherit;
+  margin: 0;
+  font-size: 1.75rem;
+  padding: 0;
+}
+
+.inactive:hover .del-button {
+  display: inline;
+}
+
+.editor {
+  max-height: 80vh;
+  overflow: auto;
+}
+
+.CodeMirror,
+.CodeMirror-scroll {
+  min-height: 60vh;
+}
+
+input.change-title {
+  margin-bottom: none;
+}
+
+hr {
+  margin: 0.5rem 0;
+}
